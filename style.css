@@ -148,6 +148,7 @@ body{
 
 .bodyWrapper {
 	background-image: url(img/dots1.png);
+	padding-bottom: 3em;
 }
 
 
@@ -195,6 +196,12 @@ body{
 		.productMenu a:hover{
 			margin-left: 10px;
 		}
+		
+		.productMenu li ul {
+			padding: 0 0 0 0.5em;
+			visibility: hidden;
+		}
+		
 		
 		.offer {
 			margin: 3em 0 0 1em;
@@ -304,13 +311,4 @@ body{
 .vertical {
 	background-image: url(img/dl_vertical.gif);
 	background-repeat: repeat-y;
-
-}
-
-.copyright {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	width: 42em;
-	height: 5em;
 }
