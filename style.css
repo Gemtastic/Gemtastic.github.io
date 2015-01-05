@@ -65,7 +65,7 @@ body{
 			color: #40371c;
 		}
 
-		.navMenu a.current {
+		.navMenu a.currentPage {
 			background-color: #efefef;    
 		}
 
@@ -193,13 +193,20 @@ body{
 			color: #40371c;
 		}
 		
+		.productMenu a.currentCategory{
+			
+		}
+		
 		.productMenu a:hover{
-			margin-left: 10px;
+			margin-left: 1em;
+		}
+		
+		.productMenu a.currentCategory:hover{
+			margin-left: 0;
 		}
 		
 		.productMenu li ul {
-			padding: 0 0 0 0.5em;
-			visibility: hidden;
+			padding: 0 0 0 0.7em;
 		}
 		
 		
