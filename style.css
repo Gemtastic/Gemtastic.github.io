@@ -125,10 +125,11 @@ body{
 /* Just the ornament banner */
 
 .bowContainer {
-	padding: 5px 0;
+	padding: 0.3em 0;
 	width: 100%;
 	height: 1.5em;
 	background-color: #40371c;
+	position: relative;
 }
 
 .line {
@@ -136,6 +137,28 @@ body{
 	background-repeat: repeat-x;
 	height: 1em;
 	padding: 0.2em 0;
+}
+
+.bowPositioner{
+	width: 42em;
+	margin: 0 auto;
+}
+
+.bowholder {
+	width: 42em;
+	height: 1.5em;
+	padding: 0.3em 0;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	margin: 0 auto;
+}
+
+#bow{
+	z-index: 2;
+	position: absolute;
+	top: -6.5em;
+	right: -3em;
 }
 
 
@@ -172,6 +195,8 @@ body{
 			vertical-align: top;
 			display: inline-block;
 			width: 9em;
+			margin: 1em 0 0 1em;
+			
 		}
 		
 		.productMenu ul{
@@ -219,8 +244,8 @@ body{
 		}
 		
 		.offerBox {
-			margin-left: 0.7em;
-			width: 7.5em;
+			margin: 0.5em 0 0 0.7em;
+			width: 7em;
 			height: 8em;
 			background-color: #d4cbab;
 		}
@@ -232,8 +257,7 @@ body{
 	width: 24.5em;
 	min-height: 200px;
 	padding: 0.7em;
-	margin-left: 1em;
-	margin-bottom: 4em;
+	margin: 3em 0 4em 1em;
 	display: inline-block;
 	vertical-align: top;
 }
