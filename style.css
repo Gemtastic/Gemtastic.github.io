@@ -75,10 +75,11 @@ body{
 
 		.navMenu a.cart, .navMenu a.cart a{
 			background-color: #6a6145;
-			color: #c2b074;
+			color: #d4cbab;
 		}
 		.navMenu a.home{
 			background-color: #40371c;
+			color: #d4cbab;
 		}
 
 
@@ -119,6 +120,33 @@ body{
 .socialBtn{
 	height: 2.5em;
 	width: 2.5em;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    -ms-transition: -ms-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+
+.socialBtn:hover {
+	transform:rotate(30deg);
+    -ms-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+}
+
+@webkit-keyframes rotate{
+	from{-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);}
+	to{-ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);}
+}
+@keyframes rotate{
+	from{
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);}
+	to{-ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);}
 }
 
 
@@ -149,7 +177,6 @@ body{
 	height: 1.5em;
 	padding: 0.3em 0;
 	position: absolute;
-	z-index: 2;
 	top: 0;
 	margin: 0 auto;
 }
@@ -243,11 +270,19 @@ body{
 			font-size: 0.8em;
 		}
 		
-		.offerBox {
+		#offerBox {
 			margin: 0.5em 0 0 0.7em;
+			padding: 0;
 			width: 7em;
 			height: 8em;
-			background-color: #d4cbab;
+			background-image: url(img/products/natursutten.jpg);
+			background-size: 7em auto;
+			background-repeat: no-repeat;
+			outline: 0;
+		}
+		
+		.productMenu a#offerBox:hover {
+			margin-left: 0.7em;
 		}
 		
 		
@@ -277,6 +312,7 @@ body{
 	margin-top: 2em;
 	position: absolute;
 	right: -80px;
+	z-index: 2;
 }
 
 .specialsChild {
@@ -291,7 +327,7 @@ body{
 #new {
 	background-image: url(img/cloud3.png);
 	background-repeat: no-repeat;
-	color: #c2b074;
+	color: #d4cbab;
 }
 
 #sale {
@@ -303,7 +339,7 @@ body{
 #spotlight {
 	background-image: url(img/cloud2.png);
 	background-repeat: no-repeat;
-	color: #c2b074;
+	color: #d4cbab;
 }
 
 .button{
